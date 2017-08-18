@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="script.js"></script>
+
+</head>
+
+
+<body>
+
+<!-- Aici totul este destul de simplu,un formular cu,campurile de care am discutat. -->
+<form name="formular" onsubmit="return validare()" method="get" id="form1">
+  Nume:<br>
+  <input type="text" name="nume">
+  
+  <br>
+  CNP:<br>
+  <input type="text" name="cnp">
+  <br>
+  
+  Telefon:<br>
+  <input type="text" name="telefon" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+  <br>
+  
+  Email:<br>
+  <input type="text" name="email">
+  <br>
+  
+  <input type="submit" value="OK">
+  <button type="button" onclick="return validare()">Start</button>
+
+  </form> 
+
+</body>
+</html>
